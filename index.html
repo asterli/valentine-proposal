@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
+        <title>to justin ♡</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        
+        <main>
+            <h1>Do you want to be my valentine? :3</h1>
+            <img src="" alt="Milk and mocha bears gif.">
+            <section>
+                <button id="yesButton" onclick="nextPage()">Yes</button>
+                <button id="noButton" onmouseover="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "valentine.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                        document.getElementById('noButton').style.left=`${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script>
+            </section>
+        </main>
     </body>
 </html>
